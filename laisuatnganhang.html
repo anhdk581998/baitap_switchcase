@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--A = FV (Future Value – giá trị trong tương lai) là số tiền bạn nhận được trong tương lai.-->
+<!--P = PV (Present Value – giá trị trong hiện tại) là số tiền gốc bạn đầu tư ban đầu.-->
+<!--r là lãi suất hằng năm.-->
+<!--n là số chu kỳ của lãi kép.-->
+<script>
+let p = +prompt("số tiền vay gốc")
+let r = +prompt("lãi suất ngân hàng ")
+let n = +prompt("số tháng đã vay ")
+let a = p * Math.pow((1 + r/12),n)
+alert("số tiền phải thanh toán đến tháng thứ "+n+" cúa số tiền gốc "+p+" là "+a )
+</script>
+</body>
+</html>

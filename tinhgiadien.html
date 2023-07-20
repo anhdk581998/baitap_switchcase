@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let kwh= +prompt("nhập số giờ công tơ")
+  let s=0
+  if (kwh>0 && kwh<=50){
+    s=1.72
+  }
+  if (kwh>50 && kwh<=100){
+    s=1.78
+  }if (kwh>100 && kwh<=200){
+    s=2
+  }if (kwh>200 && kwh<=300){
+    s=2.
+  }
+  let money = s*kwh
+  alert("s = "+s+ " tiền điện của con giời là: "+ money )
+</script>
+</body>
+</html>

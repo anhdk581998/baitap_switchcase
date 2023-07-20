@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thunhap= +prompt("nhập thu nhập theo năm")
+    let heso = 0
+
+
+    if ( thunhap>=0 && thunhap<=60000000){
+        heso = 0.05
+    }
+     else if (thunhap>60000000 && thunhap<=120000000){
+        heso = 0.1
+    }
+    else if(thunhap>120000000 && thunhap<=216000000){
+        heso = 0.15
+    }
+    else if (thunhap>216000000 && thunhap<=384000000){
+        heso = 0.2
+    }  else if (thunhap>384000000){
+        heso = 0.25
+    }else {alert("làm ăn bố láo")}
+    let thue = heso*thunhap
+    alert("hệ số là:"+heso+" thuế phải đóng là: "+ thue)
+</script>
+</body>
+</html>
